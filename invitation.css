@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  margin: 0;
+  /* background: #f5f2ef; */
+  background-image:url("./images/Bg3.jpg");
+}
+
+.title {
+    font-size: 38px;
+    color: #5f7c84;
+    animation: slideInUp 1s ease-out forwards;
+    /* line-height: 1.4; */
+}
+
+.title-second {
+    font-size: 24px;
+    color: #5f7c84;
+    animation: slideInUp 1s ease-out forwards;
+}
+
+.img-cake {
+    width: 250px;
+    align-content: center;
+    padding-left: 20px;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+  scroll-snap-type: y mandatory;
+  /* background: #fff; */
+}
+
+.main-pad {
+    animation: slideInUp 1.2s ease-out forwards;
+    padding-top: 10px;
+}
+
+.card {
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 15px;    
+    animation: slideInUp 1.2s ease-out forwards;
+}
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  scroll-snap-align: start;
+  /* background: #fff; */
+}
+
+.ribbon {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  letter-spacing: 2px;
+  color: #5f7c84;
+}
+
+.hr-cus{
+    color: #5f7c84;
+    border: 0; /* Hapus border bawaan */
+    height: 2px; /* Tebal garis */
+    background-color: #5f7c84; /* Warna oranye */
+    margin: 20px 0; /* Jarak atas-bawah */
+}
+
+.icon {
+  width: 90px;
+  margin: 20px auto;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  animation: slideInUp 1s ease-out forwards;
+}
+
+.date span {
+  font-size: 20px;
+  color: #5f7c84;
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.date strong {
+  font-size: 36px;
+  color: #5f7c84;
+}
+
+.location {
+  font-size: 14px;
+  color: #5f7c84;
+  animation: slideInUp 1s ease-out forwards;
+}
+
+.calendar {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.dresscode {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.dresscode img {
+  width: 120px;
+}
+
+.activity {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.activity li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #5f7c84;
+  font-size: 16px;
+}
+
+.activity img {
+  width: 40px;
+}
+
+
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alex-brush-regular {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.invitation-container {
+  display: flex;            /* Mengaktifkan flexbox */
+  align-items: center;      /* Membuat konten rata tengah secara vertikal */
+  gap: 30px;                /* Memberi jarak antara gambar dan tulisan */
+  padding: 20px;
+  /* background-color: #fff;
+  border-radius: 20px;      
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);  */
+  max-width: 800px;         /* Membatasi lebar maksimal */
+  margin: 0 auto;           /* Membuat kontainer di tengah halaman */
+}
+
+/* Mengatur kolom gambar agar fleksibel */
+.column-image {
+  flex: 1;                  /* Mengambil ruang yang tersedia secara proporsional */
+}
+
+.column-image img {
+  width: 100%;              /* Gambar mengikuti lebar kolom */
+  height: auto;
+  border-radius: 15px;      /* Opsional: gambar juga dibuat rounded */
+  display: block;
+}
+
+.img-date {
+  width: 200px;
+  margin-top: 30px;
+}
+
+/* Mengatur kolom teks */
+.column-text {
+  flex: 1.5;                /* Memberikan porsi ruang lebih banyak untuk teks */
+  text-align: left;         /* Teks rata kiri */
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(50px); /* Mulai dari 50px di bawah posisi asli */
+    opacity: 0;                 /* Transparan */
+  }
+  100% {
+    transform: translateY(0);   /* Berhenti di posisi asli */
+    opacity: 1;                 /* Muncul sepenuhnya */
+  }
+}
